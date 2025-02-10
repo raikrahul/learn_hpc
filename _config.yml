@@ -1,0 +1,4 @@
+title: "Learn HPC Lessons"
+description: "A collection of text-based lessons on high-performance computing."
+baseurl: "/learn_hpc"  # Only if it's a project page; leave empty for user/org page
+theme: minimal
