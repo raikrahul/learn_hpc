@@ -30,3 +30,11 @@
 *.exe
 *.out
 *.app
+
+# Jekyll specific
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+vendor/
+.bundle/
