@@ -2,8 +2,8 @@ name: Deploy Jekyll with GitHub Pages
 
 on:
   push:
-    branches: ["main"]  # Or your default branch
-  workflow_dispatch:  # Allows manual triggering
+    branches: ["main"]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -21,14 +21,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Setup Pages
-        uses: actions/configure-pages@v3  # Use v3 for stability
+        uses: actions/configure-pages@v3
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source:./
-          destination:./_site
+          source:./      # Source on its own line
+          destination:./_site  # Destination on its own line
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2  # Use v2 for stability
+        uses: actions/upload-pages-artifact@v2
 
   deploy:
     environment:
@@ -39,4 +39,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2  # Use v2 for stability
+        uses: actions/deploy-pages@v2
