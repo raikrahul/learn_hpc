@@ -25,16 +25,8 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1'
+          ruby-version: '2.7.4'
           bundler-cache: true
-
-      - name: Install Jekyll and Dependencies
-        run: |
-          gem install jekyll bundler
-          bundle install
-
-      - name: Clean Jekyll Cache
-        run: bundle exec jekyll clean
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v3
