@@ -1,4 +1,2 @@
-title: Learn HPC Lessons  # Your site title
-description: Lessons in High-Performance Computing # Your site description
-theme: jekyll-theme-minimal # Use a simple theme
+url: "https://raikrahul.github.io"
 baseurl: "/learn_hpc"
