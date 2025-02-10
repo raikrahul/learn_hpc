@@ -1,5 +1,8 @@
-# _config.yml
 title: "Learn HPC Lessons"
 description: "A collection of text-based lessons on high-performance computing."
-baseurl: "" # Leave empty for project page if repo name is learn-hpc, otherwise use /repo-name if it is different.
-theme: minimal
+baseurl: "/learn_hpc"  # Update this to match your repository name
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
