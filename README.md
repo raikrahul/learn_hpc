@@ -1,6 +1,6 @@
 # Learn HPC Lessons
 
-Welcome to the repository for [Your Site Name Here, e.g., "Learn HPC Lessons"] - a website dedicated to providing clear, text-based tutorials on High-Performance Computing (HPC) concepts.
+Welcome to the repository for **Learn HPC Lessons** - a website dedicated to providing clear, text-based tutorials on High-Performance Computing (HPC) concepts.
 
 This site is built using Jekyll and hosted on GitHub Pages, making it easy to contribute lessons and automatically deploy updates.
 
@@ -68,7 +68,7 @@ Adding a new lesson is straightforward! Just follow these steps:
     *   You can check the progress in the "Actions" tab of your repository.
 
 6.  **Verify Your Lesson is Live:**
-    *   Once the GitHub Actions workflow succeeds, visit your website (e.g., `https://raikrahul.github.io/learn_hpc/`).
+    *   Once the GitHub Actions workflow succeeds, visit your website at [https://raikrahul.github.io/learn_hpc/](https://raikrahul.github.io/learn_hpc/).
     *   Your new lesson should now be listed on the homepage under the "Lessons" section.
     *   Click on the lesson link to view the full lesson content.
 
@@ -99,7 +99,7 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ## Live Site
 
-[Link to your live GitHub Pages site here, e.g., https://raikrahul.github.io/learn_hpc/](https://raikrahul.github.io/learn_hpc/)
+[https://raikrahul.github.io/learn_hpc/](https://raikrahul.github.io/learn_hpc/)
 
 ## Contributing
 
