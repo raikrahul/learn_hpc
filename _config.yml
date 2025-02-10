@@ -1,4 +1,5 @@
+# _config.yml
 title: "Learn HPC Lessons"
 description: "A collection of text-based lessons on high-performance computing."
-baseurl: "/learn_hpc"  # Only if it's a project page; leave empty for user/org page
+baseurl: "" # Leave empty for project page if repo name is learn-hpc, otherwise use /repo-name if it is different.
 theme: minimal
