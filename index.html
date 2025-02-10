@@ -6,5 +6,30 @@
 <body>
   <h1>Learn HPC Lessons</h1>
   <p>Welcome! Lessons will go here.</p>
+
+  <h2>Lessons</h2>
+  <ul id="lessonList">
+    </ul>
+
+  <script>
+    const lessons = [
+      "lesson0.md" // Add your lesson filenames here
+      // You will add more lesson filenames as you create new lessons
+    ];
+
+    const lessonList = document.getElementById('lessonList');
+
+    lessons.forEach(lessonFile => {
+      const listItem = document.createElement('li');
+      const lessonLink = document.createElement('a');
+      lessonLink.href = lessonFile; // Link to the lesson Markdown file
+      // Extract lesson name from filename (remove ".md" and capitalize first letter)
+      const lessonName = lessonFile.replace(".md", "").replace(/^lesson(\d+)$/, 'Lesson $1');
+      lessonLink.textContent = lessonName;
+      listItem.appendChild(lessonLink);
+      lessonList.appendChild(listItem);
+    });
+  </script>
+
 </body>
 </html>
