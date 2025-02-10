@@ -25,8 +25,8 @@ jobs:
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
         with:
-          source:./      # Source on its own line
-          destination:./_site  # Destination on its own line
+          source: ./      # Corrected: space added after the colon
+          destination: ./_site  # Corrected: space added after the colon
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
 
