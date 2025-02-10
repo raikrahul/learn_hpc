@@ -9,6 +9,7 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  actions: write
 
 concurrency:
   group: "pages"
@@ -21,6 +22,20 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+
+      - name: Install Jekyll and Dependencies
+        run: |
+          gem install jekyll bundler
+          bundle install
+
+      - name: Clean Jekyll Cache
+        run: bundle exec jekyll clean
+
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v3
 
@@ -31,7 +46,7 @@ jobs:
           destination: ./_site
 
       - name: Upload GitHub Pages Artifact
-        uses: actions/upload-pages-artifact@v3  # Updated from v2 to v3
+        uses: actions/upload-pages-artifact@v3
 
   deploy:
     environment:
