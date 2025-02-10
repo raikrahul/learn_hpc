@@ -1,12 +1,5 @@
-
 ---
 layout: default
 title: "Lesson 0: Hello HPC World"
-date: 2025-03-03
+date: 2024-03-03  # <--- Changed year to 2024 (or whatever date you used)
 ---
-
-## Lesson 0: Hello HPC World
-
-Welcome to your first lesson!
-
-[Your lesson content in Markdown here...]
